@@ -57,7 +57,7 @@ hr {
 
 /******************class selectors******************/
 .top-container {
-  background-color: #e6fafa;
+  background-color: orange;  /*#e6fafa;*/
 
   position: relative;
   padding-top: 100px;
