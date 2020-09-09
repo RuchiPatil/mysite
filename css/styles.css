@@ -41,7 +41,7 @@ h2 {
 
 h3 {
   font-family: 'Montserrat', sans-serif;
-  color: red;
+  color: #11999E;
 }
 
 p {
@@ -57,7 +57,7 @@ hr {
 
 /******************class selectors******************/
 .top-container {
-  background-color: orange;
+  background-color: #eaf6f6; 
 
   position: relative;
   padding-top: 100px;
