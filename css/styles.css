@@ -1,13 +1,11 @@
-
 /******************tag selectors******************/
-div{
+div {
   margin-top: inherit;
-
+  text-align: center;
 }
 
-a{
+a {
   color: #DA7161;
-  font-family: 'Montserrat', sans-serif;
   margin: 10px 20px;
   text-decoration: none;
 }
@@ -17,33 +15,68 @@ a:hover {
 }
 
 body {
-  color: #676B9B;
+  color: #747474;
   margin: 0;
   text-align: center;
-  font-family: 'Merriweather', serif;
+  font-family: 'Open Sans Condensed', sans-serif;
 }
 
 h1 {
+  position: relative;
   font-size: 5.625rem;
   margin: 50px auto 0 auto;
-  font-family: 'Sacramento', cursive;
-  color: #EFA18A;
+  font-family: 'Pacifico', cursive;
+  color: #676B9B;
   line-height: 2;
+  z-index: 5;
 }
 
 h2 {
+  text-align: center;
   font-size: 2.5em;
-  font-family: 'Montserrat', sans-serif;
+  font-family: 'PT sans', sans-serif;
   font-weight: normal;
   color: #EFA18A;
   padding-bottom: 10px;
 }
 
 h3 {
-  font-family: 'Montserrat', sans-serif;
+  text-align: center;
+  font-family: 'PT Sans', sans-serif;
   color: #DA7161;
 }
 
+ul {
+  padding-left: 0;
+  list-style: none;
+
+}
+
+li {
+  line-height: 2;
+  font-family: 'Open Sans Condensed', sans-serif;
+}
+
+li::before {
+  font-weight: bold;
+  content: "⁛ ";
+  color: #C8CAE4;
+}
+
+li::after {
+  font-weight: bold;
+  content: " ⁛";
+  color: #C8CAE4;
+}
+
+table {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+td {
+  width: 50%;
+}
 p {
   line-height: 2;
 }
@@ -55,32 +88,133 @@ hr {
   margin: 100px auto;
 }
 
-/******************class selectors******************/
+/*class selectors*/
+/* ___________________ WELCOME ___________________ */
 .top-container {
   background: linear-gradient(#ACAEC5, #E2BAB1, #DDA6B9);
-
+  text-align: center;
+  font-family: 'Lobster', cursive;
   position: relative;
   padding-top: 100px;
+  padding-bottom: 400px;
+  overflow: hidden;
+  z-index: -1;
+}
+
+.hi-text {
+  animation: hi-text 6s 1;
+  animation-direction: normal;
+}
+
+@keyframes hi-text {
+  0%  {opacity: 0}
+  55% {opacity: 0.01}
+  100% {opacity: 1}
+}
+
+.ruchi-text {
+  margin: 0;
+  animation: ruchi-text 7s 1;
+  animation-direction: normal;
+}
+
+@keyframes ruchi-text {
+  0%  {opacity: 0}
+  80% {opacity: 0}
+  100% {opacity: 1}
+}
+.arrow-text {
+  margin: 0;
+  animation: arrow-text 9s 1;
+  animation-direction: normal;
+}
+
+@keyframes arrow-text {
+  0%  {opacity: 0}
+  80% {opacity: 0}
+  100% {opacity: 1}
+}
+
+.cloud {
+  z-index: auto;
+}
+
+.topleft-cloud {
+  position: absolute;
+  left: 10%;
+  width: 15%;
+  height: auto;
+
+  animation: topleft-cloud 3s 1;
+  animation-direction: normal;
+}
+
+@keyframes topleft-cloud {
+  0%   {opacity: 0.1; left: 0; }
+  40%  {opacity: 0.5;}
+  100% {opacity: 1; left: 10%; }
+}
+
+.topright-cloud {
+  position: absolute;
+  top: 2%;
+  right: 21%;
+  width: 20%;
+
+  animation: topright-cloud 3s 1;
+  animation-direction: normal;
+}
+
+@keyframes topright-cloud {
+  0%   {opacity: 0.1; right: 10%; }
+  40%  {opacity: 0.5;}
+  100% {opacity: 1; right: 20%; }
+}
+
+.bottomleft-cloud {
+  position: absolute;
+  top: 60%;
+  left: 32%;
+  width: 15%;
+
+  animation: bottomleft-cloud 3s 1;
+  animation-direction: normal;
+}
+
+@keyframes bottomleft-cloud {
+0%   {opacity: 0.1; left: 22%; }
+40%  {opacity: 0.5;}
+100% {opacity: 1; left: 32%; }
+}
+
+.bottomright-cloud {
+  position: absolute;
+  right: 10%;
+  top: 55%;
+  width: 15%;
+
+  animation: bottomright-cloud 3s 1;
+  animation-direction: normal;
+}
+
+@keyframes bottomright-cloud {
+0%   {opacity: 0.1; right: 0%; }
+40%  {opacity: 0.5;}
+100% {opacity: 1; right: 10%; }
+}
+
+/* ___________________ INTRODUCTION ___________________ */
+.first-container {
+  margin-top: 100px;
 }
 
 .intro {
   width: 30%;
   margin: auto;
 }
-.skill-row {
-  width: 50%;
-  margin: 100px auto 100px auto;
-  text-align: left;
-  }
 
-.pro {
-  text-decoration: underline;
-}
-
-.top-cloud {
-  position: absolute;
-  top: 40px;
-  right: 300px;
+.first-h2 {
+  color: #D489A3;
 }
 
 .profile-pic {
@@ -88,39 +222,120 @@ hr {
   height: auto;
 }
 
-.bottom-cloud{
-  position: absolute;
-  left: 250px;
-  bottom: 300px;
+/* ___________________ MY SKILLZ ___________________  */
+.second-container {
+  background-color: #E2BAB1;
+  overflow: hidden;
+  margin-top: 50px;
+  padding-bottom: 100px;
 }
 
+.skill-h2 {
+  color: #DF7464;
+}
 
-.did-nothing {
-  width: 25%;
-  float: left;
+.right-skill {
+  text-align: left;
+}
+
+.left-skill {
+  text-align: right;
+}
+
+.skill-row {
+  width: 50%;
+  margin: 100px auto 100px auto;
+  text-align: left;
+}
+
+.skill-p::before {
+  color: inherit;
+}
+
+.skill-p::after {
+  content: "";
+}
+.space {
+  height: 50px;
+}
+.fe-gif {
+  width: 20%;
+  text-align: center;
   margin-right: 30px;
+  background-color: black;
+  border-radius: 50%;
 }
 
-.chillies {
-  width: 25%;
-  float: right;
+.d-gif {
+  width: 20%;
+  text-align: center;
   margin-left: 30px;
+  border-radius: 50%;
+}
+
+.robot-gif {
+  width: 20%;
+  text-align: center;
+  margin-right: 30px;
+  border-radius: 50%;
+}
+
+.graph-gif {
+  width: 20%;
+  text-align: center;
+  margin-left: 30px;
+  border-radius: 50%;
+}
+
+/* ___________________ EXPERIENCE ___________________ */
+.third-container {
+  margin-top: 75px;
+  text-align: center;
+}
+.third-h2 {
+  color: #A3A6C6;
+}
+
+
+.third-h3 {
+  color: #979BD2;
+}
+
+.carousel-control {
+  background: linear-gradient(#F8CDC3, #C0C5FB);
+  padding: 5px;
+  border-radius: 15%;
+  height: 60px;
+  width: 50px;
+}
+
+.exp-item {
+  margin-left: auto;
+}
+
+/* ___________________ CONTACTS ___________________ */
+.bottom-container {
+  margin: 100px 0 0;
+  background: linear-gradient(#DDDFFA, #D4D6F0, #C8CAE4, #ACAEC5);
+  padding: 50px 0 20px;
+  text-align: center;
+}
+
+.bottom-h2 {
+  color: #ACAEC5;
+}
+
+.bottom-h3 {
+  color: #7A7DA0;
 }
 
 .footer-link {
-  color: #F08D7E;
+  color: #E8EAF7;
 }
 
-.middle-container {
-  margin: 100px 0;
+.contact-me {
+  margin-top: 50px;
 }
-
-.bottom-container {
-margin: 100px 0;
-background-color: #EFA18A;
-padding: 50px 0 20px;
-}
-
 
 .contact-mess {
   width: 40%;
@@ -134,29 +349,26 @@ padding: 50px 0 20px;
 }
 
 .myButton {
-	background:linear-gradient(to bottom, #F08D7E 5%, #DDA6B9 100%);
-	background-color:#F08D7E;
-	border-radius:6px;
-	display:inline-block;
-	cursor:pointer;
-	color:#E2BAB1;
-	font-family:Arial;
-	font-size:17px;
-	padding:16px 31px;
-	text-decoration:none;
+  background-color: #F08D7E;
+  border-radius: 6px;
+  display: inline-block;
+  cursor: pointer;
+  color: #F4D2CA;
+  font-size: 22px;
+  padding: 10px 15px;
+  text-decoration: none;
+  margin-bottom: 160px;
 }
+
 .myButton:hover {
-	background:linear-gradient(to bottom, #DDA6B9 5%, #F08D7E 100%);
-	background-color:#DDA6B9;
+  background-color: #DDA6B9;
+  color: #E8EAF7;
+  text-decoration: none;
 }
+
 .myButton:active {
-	position:relative;
-	top:1px;
+  position: relative;
+  top: 1px;
 }
-
-
-
-
-
 
 /******************ID selectors******************/

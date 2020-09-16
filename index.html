@@ -4,57 +4,219 @@
 <head>
   <meta charset="utf-8">
   <title>Ruchi Patil</title>
+
+  <!-- STYLE SHEETS -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
   <link rel="stylesheet" href="css/styles.css">
+
   <link rel="icon" href="favicon.ico">
-  <link href="https://fonts.googleapis.com/css2?family=Merriweather:ital@1&family=Montserrat:wght@500&family=Sacramento&display=swap" rel="stylesheet">
+
+  <!-- FONTS -->
+  <link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Gayathri&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=PT+Sans&display=swap" rel="stylesheet">
+
+
+  <!-- BOOTSTRAP JAVASCRIPT -->
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+
 </head>
 
 <body>
 
   <div class="top-container">
-    <img class="topright-cloud" src="images/cloud1.png" alt="cloud">
-    <img class="topleft-cloud" src="images/cloud2.png" alt="cloud">
-     <h1> I'm Ruchi</h1>
-    <img class="bottomleft-cloud" src="images/cloud3.png" alt="cloud">
-    <img class="bottomright-cloud" src="images/cloud4.png" alt="cloud">
+    <img class="cloud topright-cloud" src="images/cloud1.png" alt="cloud">
+    <img class="cloud topleft-cloud" src="images/cloud2.png" alt="cloud">
+    <h1 class="hi-text">Hi..</h1>
+    <h1 class="ruchi-text"> I'm Ruchi </h1>
+    <img class="cloud bottomright-cloud" src="images/cloud3.png" alt="cloud">
+    <img class="cloud bottomleft-cloud" src="images/cloud4.png" alt="cloud">
+
+    <h1 class="arrow-text"> ↓ </h1>
+  </div>
+
+  <!-- HERE IS ME -->
+  <div class="first-container">
+    <div class="profile">
+      <img class="profile-pic" src="images/morningsky.png" alt="morning-sky">
+      <h2 class="first-h2">So this is me.</h2>
+      <p class="intro">
+        I like being funny at my expense, I can watch movies all day, and I like
+        to look out the window pensively while it rains.
+      </p>
+      <p>
+        And sometimes I code!
+      </p>
+    </div>
+    <hr>
 
   </div>
 
-  <div class="middle-container">
-    <div class="profile">
-      <img class = "profile-pic" src="images/morningsky.png" alt="morning-sky">
-      <h2>Hello.</h2>
-      <p class="intro" >Lorem ipsum dolor sit amet, vitae volutpat, dui conubia, dolor urna. Non auctor, montes nulla distinctio.</p>
-    </div>
-    <hr>
+  <!-- MY SKILLZ -->
+  <div class="second-container">
     <div class="skills">
-      <h2>My Skills.</h2>
-      <div class="skill-row">
-        <img class="did-nothing" src="https://media2.giphy.com/media/YPsU3ZhxmZaAZRasxW/200.webp" alt="">
-        <h3>Lorem & Ipsum</h3>
-        <p class="skill-p1">Lorem ipsum dolor sit amet, quis in duis, iaculis id felis. Consectetuer vestibulum, nunc urna lectus, erat ligula. Hendrerit nam, lectus ante, ut lorem eros.</p>
-      </div>
-      <div class="skill-row">
-        <img class="chillies" src="images/chillies.png" alt="">
-        <h3>Lorem Ipsum Dolor</h3>
-        <p class="skill-p2">Lorem ipsum dolor sit amet, mauris sed consectetuer. Etiam et eu, bibendum interdum, lacus quis mauris. Curabitur wisi, quisque vel eu, rutrum nam.</p>
-      </div>
+      <h2 class="skill-h2">My Skills.</h2>
+      <table>
+        <tr class="space"></tr>
+        <tr>
+          <td>
+            <img class="fe-gif" src="images/html-tag-gif.gif" alt="">
+          </td>
+
+          <td>
+            <h3 class="right-skill">Web Development</h3>
+            <ul class="right-skill">
+              <li class="skill-p">HTML, CSS, Java, Javascipt, DOM</li>
+              <li class="skill-p"> Node, templates (eg. EJS)</li>
+              <li class="skill-p">SQL (mySQL), noSQL (MongoDB)</li>
+            </ul>
+          </td>
+        </tr>
+        <tr class="space"></tr>
+        <tr>
+          <td>
+            <h3 class="left-skill">Data Preperation</h3>
+            <ul class="left-skill">
+              <li class="skill-p">Python; NumPy, MatPlotLib, Pandas, etc.</li>
+              <li class="skill-p">Math; Statistics, Discrete Math, Regression</li>
+              <li class="skill-p">Matlab</li>
+            </ul>
+          </td>
+          <td>
+            <img class="d-gif" src="images/laptopgraph.gif" alt="">
+          </td>
+        </tr>
+        <tr class="space"></tr>
+        <tr>
+          <td>
+            <img class="robot-gif" src="https://media.giphy.com/media/3o6EhXOmIjkmorLMqY/giphy.gif" alt="">
+          </td>
+          <td>
+            <h3 class="right-skill">Embedded</h3>
+            <ul class="right-skill">
+              <li class="skill-p">Embedded C</li>
+              <li class="skill-p">Integrated progrmming (VHDL)</li>
+              <li class="skill-p">Have worked with Nucleo</li>
+            </ul>
+          </td>
+        </tr>
+        <tr class="space"></tr>
+        <tr>
+          <td>
+            <h3 class="left-skill">Data Structures</h3>
+            <ul class="left-skill">
+              <li class="skill-p">C++, C</li>
+              <li class="skill-p">Graphs, Hash Tables, Binary Trees, AVL Trees, Heaps</li>
+              <li class="skill-p">Graph traversal (BFS, DFS), Time Complexities</li>
+            </ul>
+          </td>
+          <td>
+            <img class="graph-gif" src="images/node-network.gif" alt="">
+          </td>
+        </tr>
+      </table>
     </div>
-    <hr>
+  </div>
+
+  <!-- EXPERIENCE AND PROJECTS -->
+  <div class="third-container">
+    <h2 class="third-h2"> Experience and Projects </h2>
+
+    <div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
+      <div class="carousel-inner">
+
+        <div class="carousel-item active">
+          <h3 class="third-h3">Web Developer</h3>
+          <h4>2018 ∘ Kenna</h4>
+          <ul>
+            <li class="exp-item">Front-end development; javascript</li>
+            <li class="exp-item">IBM Notes; lotuscript; IBM Domino </li>
+            <li class="exp-item">Microsoft SQL Server</li>
+          </ul>
+        </div>
+
+        <div class="carousel-item">
+          <h3 class="third-h3">Programmer Analyst</h3>
+          <h4>2018 ∘ Ministry of Education</h4>
+          <ul>
+            <li class="exp-item">Automated testing; Selenium</li>
+            <li class="exp-item">Software maintenance</li>
+            <li class="exp-item">Part of Agile team</li>
+          </ul>
+        </div>
+
+        <div class="carousel-item">
+          <h3 class="third-h3">Backend Developer</h3>
+          <h4>2017 ∘ Environment Canada</h4>
+          <ul>
+            <li class="exp-item">Working with databases and schemas</li>
+            <li class="exp-item">Oracle Database, Oracle Application Express</li>
+            <li class="exp-item">Designing licensing software</li>
+          </ul>
+        </div>
+
+        <div class="carousel-item">
+          <h3 class="third-h3">Coded Messaging System</h3>
+          <h4>2019</h4>
+          <ul>
+            <li class="exp-item">Sending and recieving encrypted
+              audio/text messages between two machines</li>
+            <li class="exp-item">Encryption algorithms, Hashing</li>
+            <li class="exp-item">serial communication</li>
+          </ul>
+        </div>
+
+        <div class="carousel-item">
+          <h3 class="third-h3">Pomodoro Timer</h3>
+          <h4>2019</h4>
+          <ul>
+            <li class="exp-item">Productivity timer that breaks down work
+              with intervals of breaks. </li>
+            <li class="exp-item">Javascipt</li>
+          </ul>
+        </div>
+
+        <div class="carousel-item">
+          <h3 class="third-h3">Celestial Window</h3>
+          <h4>2020</h4>
+          <ul>
+            <li class="exp-item">Using user's location and space-related data to
+              visualize a soothing, 'vibey' 2D sky. </li>
+            <li class="exp-item">Working with space-related APIs, Node, templates, etc.</li>
+          </ul>
+        </div>
+      </div>
+      <a class="carousel-control-prev carousel-control" href="#carouselExampleControls" role="button" data-slide="prev">
+        <span class=" carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="sr-only">Previous</span>
+      </a>
+      <a class="carousel-control-next carousel-control " href="#carouselExampleControls" role="button" data-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="sr-only">Next</span>
+      </a>
+    </div>
+
+    <!-- ######################################################################################### -->
+
+  </div>
+
+  <!-- CONTACTING ME -->
+  <div class="bottom-container">
     <div class="contact-me">
-      <h2>Get In Touch</h2>
-      <h3>Lorem ipsum dolor sit amet, non elit.</h3>
-      <p class="contact-mess" >Lorem ipsum dolor sit amet, in quis, aenean amet. Phasellus sodales, tellus donec dui, ornare erat.</p>
+      <h2 class="bottom-h2">Get In Touch</h2>
+      <h3 class="bottom-h3">Lorem ipsum dolor sit amet, non elit.</h3>
+      <p class="contact-mess">Lorem ipsum dolor sit amet, in quis,
+        aenean amet. Phasellus sodales, tellus donec dui, ornare erat.
+      </p>
       <a class="myButton" href="mailto:ruchipatil@outlook.com">CONTACT ME</a>
     </div>
-  </div>
 
-
-  <div class="bottom-container">
     <a class="footer-link" href="https://www.linkedin.com/">LinkedIn</a>
     <a class="footer-link" href="https://twitter.com/">Twitter</a>
     <a class="footer-link" href="https://www.appbrewery.co/">Website</a>
-    <p class="copyright" >© 2018 Ruchi Patil.</p>
+    <p class="copyright">© 2018 Ruchi Patil.</p>
   </div>
 
 
