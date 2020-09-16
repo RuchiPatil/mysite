@@ -102,30 +102,30 @@ hr {
 }
 
 .hi-text {
-  animation: hi-text 6s 1;
+  animation: hi-text 5s 1;
   animation-direction: normal;
 }
 
 @keyframes hi-text {
   0%  {opacity: 0}
-  55% {opacity: 0.01}
+  20% {opacity: 0.05}
   100% {opacity: 1}
 }
 
 .ruchi-text {
   margin: 0;
-  animation: ruchi-text 7s 1;
+  animation: ruchi-text 5s 1;
   animation-direction: normal;
 }
 
 @keyframes ruchi-text {
   0%  {opacity: 0}
-  80% {opacity: 0}
+  70% {opacity: 0.04}
   100% {opacity: 1}
 }
 .arrow-text {
   margin: 0;
-  animation: arrow-text 9s 1;
+  animation: arrow-text 7s 1;
   animation-direction: normal;
 }
 
