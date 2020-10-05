@@ -199,7 +199,7 @@ hr {
 }
 
 @keyframes bottomright-cloud {
-0%   {opacity: 0.1; right: 0%; }
+0%   {opacity: 0.1; right: 0; }
 40%  {opacity: 0.5;}
 100% {opacity: 1; right: 10%; }
 }
