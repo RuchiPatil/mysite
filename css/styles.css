@@ -102,36 +102,37 @@ hr {
 }
 
 .hi-text {
-  animation: hi-text 5s 1;
+  animation: hi-text 3s 1;
   animation-direction: normal;
 }
 
 @keyframes hi-text {
   0%  {opacity: 0}
-  20% {opacity: 0.05}
+  20% {opacity: 0.1}
   100% {opacity: 1}
 }
 
 .ruchi-text {
   margin: 0;
-  animation: ruchi-text 5s 1;
+  animation: ruchi-text 3s 1;
   animation-direction: normal;
 }
 
 @keyframes ruchi-text {
   0%  {opacity: 0}
-  70% {opacity: 0.04}
+  30% {opacity: 0.1}
   100% {opacity: 1}
 }
 .arrow-text {
   margin: 0;
-  animation: arrow-text 7s 1;
+  font-size: 4rem;
+  animation: arrow-text 4s 1;
   animation-direction: normal;
 }
 
 @keyframes arrow-text {
   0%  {opacity: 0}
-  80% {opacity: 0}
+  20%  {opacity: 0}
   100% {opacity: 1}
 }
 
